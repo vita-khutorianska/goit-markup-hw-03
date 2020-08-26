@@ -10,7 +10,7 @@
   --white: #ffffff;
   --button-bck-color: #f5f4fa;
 }
-.body {
+body {
   color: var(--primery-text-colour);
   background-color: var(--main-bg-color);
   text-decoration: none;
@@ -32,7 +32,7 @@
   font-family: raleway, sans-serif;
   font-weight: 700;
   font-size: 26px;
-  line-height: 1.2px;
+  line-height: 1.2;
 
   text-decoration: none;
 }
@@ -42,14 +42,7 @@
 .logo-part {
   color: var(--primery-text-colour);
 }
-.logo:hover,
-.logo:focus {
-  color: var(--acent);
-}
-.logo-part:hover,
-.logo-part:focus {
-  color: var(--acent);
-}
+
 /* site navigation*/
 .site-nav .link {
   font-weight: 500;
@@ -60,13 +53,15 @@
   text-decoration: none;
   list-style: none;
 }
-.site-nav .link:hover {
-  color: var(--acent);
-}
-.site-nav .link:focus,
+.site-nav .link:hover,
+.link:focus,
 .link:active {
   color: var(--acent);
 }
+.link-act {
+  color: var(--acent);
+}
+
 .nav-auth .link {
   font-weight: 500;
   font-size: 14px;
@@ -75,10 +70,9 @@
   color: var(--text-color);
   text-decoration: none;
 }
-.nav-auth .link:hover {
-  color: var(--acent);
-}
-.nav-auth .link:focus {
+
+.nav-auth .link:hover,
+.link:focus {
   color: var(--acent);
 }
 
@@ -111,10 +105,7 @@
   color: var(--white);
   background-color: var(--acent);
 }
-.button.primary:active {
-  color: var(--white);
-  background-color: var(--acent);
-}
+
 .card {
   background-color: var(--white);
 }
@@ -143,14 +134,7 @@
   background-color: var(--acent);
   text-decoration: none;
 }
-.hero .button.secondary:hover {
-  color: var(--acent);
-  background-color: var(--white);
-}
-.hero .button.secondary:active {
-  color: var(--acent);
-  background-color: var(--white);
-}
+
 /*особенности работы*/
 
 .title {
@@ -192,7 +176,7 @@
   color: #757575;
 }
 
-/*futter*/
+/*fotter*/
 
 .footer {
   color: var(--white);
@@ -207,7 +191,12 @@
   color: var(--white);
   text-decoration: none;
 }
+.adress {
+  color: var(--white);
+  font-style: normal;
+}
 .adress-link {
+  font-style: normal;
   font-size: 14px;
   line-height: 1.71;
   color: var(--footer-tel-mail-colour);
@@ -218,7 +207,7 @@
   color: var(--acent);
 }
 
-/*portfolio*/
+/*наши работы*/
 a {
   text-decoration: none;
 }
@@ -232,5 +221,5 @@ a {
 .portfolio .text {
   font-size: 16px;
   line-height: 1.87;
-  color: #757575;
+  color: var(--text-color);
 }
