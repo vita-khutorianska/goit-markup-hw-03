@@ -42,6 +42,10 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 img {
   display: block;
   max-width: 100%;
@@ -69,7 +73,6 @@ img {
 .page-header {
   padding-top: 32px;
   padding-bottom: 32px;
-  background-color: greenyellow;
 }
 
 /* logo*/
@@ -82,6 +85,7 @@ img {
   line-height: 1.2;
   text-decoration: none;
 }
+
 .logo-main {
   color: var(--acent);
 }
@@ -93,11 +97,9 @@ img {
 .site-nav {
   display: flex;
   align-items: center;
-  background-color: blueviolet;
+  margin-right: auto;
 }
-.site-nav {
-  margin-right: 331px;
-}
+
 .nav-list {
   display: flex;
 }
@@ -130,7 +132,6 @@ img {
 .nav-auth {
   display: flex;
   align-items: center;
-  background-color: pink;
 }
 .nav-auth .link {
   font-weight: 500;
@@ -144,7 +145,7 @@ img {
 .link:focus {
   color: var(--acent);
 }
-.auth-item {
+.auth-item:not(:last-child) {
   margin-right: 50px;
 }
 
@@ -161,10 +162,10 @@ img {
 .hero-title {
   margin-top: 0;
   margin-bottom: 40px;
+
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--white);
@@ -187,25 +188,34 @@ img {
   text-decoration: none;
 }
 /*Преимущества*/
-.advantege {
-  padding-top: 94px;
-  padding-bottom: 94px;
+.advantage {
+  background-color: pink;
 }
-
-.title {
+.feature {
+  flex-wrap: wrap;
+  margin-top: -94px;
+  margin-bottom: -94px;
+}
+.feature-items {
+  margin-top: 94px;
+  margin-bottom: 94px;
+  width: calc((100% - 4 * 30px) / 4);
+}
+.advantage .title {
   margin-top: 0;
   margin-bottom: 0;
   padding-bottom: 50px;
+
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
-  text-align: center;
   letter-spacing: 0.03em;
 }
 .subtitle {
   margin-top: 0;
   margin-bottom: 0;
   padding-bottom: 10px;
+
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -214,6 +224,7 @@ img {
 .text {
   margin-top: 0;
   margin-bottom: 0;
+
   font-size: 14px;
   line-height: 1.71;
   color: var(--text-color);
@@ -229,8 +240,8 @@ img {
 .team-title {
   margin-top: 0;
   margin-bottom: 0;
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-bottom: 50px;
+
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
@@ -242,6 +253,7 @@ img {
   margin-bottom: 0;
   padding-top: 30px;
   padding-bottom: 10px;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
@@ -251,6 +263,7 @@ img {
   margin-top: 0;
   margin-bottom: 0;
   padding-bottom: 30px;
+
   font-size: 16px;
   line-height: 1.18;
   text-align: center;
@@ -267,6 +280,7 @@ img {
 .footer .logo {
   padding-top: 60px;
   padding: 20px;
+
   font-family: raleway, sans-serif;
   font-weight: 700;
   font-size: 26px;
@@ -295,8 +309,6 @@ a {
   text-decoration: none;
 }
 .portfolio .subtitle {
-  margin-top: 0;
-  margin-bottom: 0;
   padding-bottom: 4px;
   font-weight: 700;
   font-size: 18px;
