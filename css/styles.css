@@ -34,6 +34,7 @@ body {
 }
 .flexbox {
   display: flex;
+  flex-wrap: wrap;
 }
 .container {
   width: 1200px;
@@ -312,10 +313,6 @@ img {
   color: var(--white);
   text-decoration: none;
 }
-.adress {
-  color: var(--white);
-  font-style: normal;
-}
 .adress-link {
   font-style: normal;
   font-size: 14px;
@@ -327,13 +324,28 @@ img {
 .adress-link:focus {
   color: var(--acent);
 }
+.company-adress {
+  color: var(--white);
+  font-style: normal;
+  padding-bottom: 9px;
+}
+.mail {
+  padding-bottom: 9px;
+}
+.phone {
+  padding-bottom: 60px;
+}
 
-/*наши работы*/
+/*наши работ ы*/
 a {
   text-decoration: none;
 }
 .portfolio .subtitle {
+  padding-top: 20px;
   padding-bottom: 4px;
+  padding-right: 20px;
+  padding-left: 20px;
+
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -341,7 +353,29 @@ a {
   color: var(--primery-text-colour);
 }
 .portfolio .text {
+  padding-bottom: 20px;
+  padding-right: 20px;
+  padding-left: 20px;
+
   font-size: 16px;
   line-height: 1.87;
   color: var(--text-color);
+}
+.filters-list {
+  justify-content: center;
+  padding-bottom: 56px;
+}
+.filters-items:not(:last-child) {
+  margin-right: 8px;
+}
+.portfolio-list {
+  margin-bottom: -30px;
+}
+.portfolio-items {
+  width: calc((100% - 30px * 3) / 3);
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+.portfolio-items:nth-child(3) {
+  margin-right: 0;
 }
