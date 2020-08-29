@@ -193,23 +193,15 @@ img {
 }
 .feature {
   flex-wrap: wrap;
-  margin-top: -94px;
   margin-bottom: -94px;
 }
 .feature-items {
-  margin-top: 94px;
+  width: calc((100% - 30px * 4) / 4);
+  margin-right: 30px;
   margin-bottom: 94px;
-  width: calc((100% - 4 * 30px) / 4);
 }
-.advantage .title {
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-bottom: 50px;
-
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
-  letter-spacing: 0.03em;
+.feature-items:nth-child(4) {
+  margin-right: 0;
 }
 .subtitle {
   margin-top: 0;
@@ -231,6 +223,33 @@ img {
 }
 
 /*чем занимаються*/
+.work {
+  background-color: yellow;
+}
+.work-title {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-bottom: 50px;
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+  text-align: center;
+}
+.work-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: -94px;
+}
+.work-items {
+  width: calc((100% - 30px * 3) / 3);
+  margin-right: 30px;
+  margin-bottom: 94px;
+}
+.work-items:nth-child(3) {
+  margin-right: 0;
+}
 
 /*team*/
 
@@ -246,7 +265,6 @@ img {
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
-  letter-spacing: 0.03em;
 }
 .team-subtitle {
   margin-top: 0;
