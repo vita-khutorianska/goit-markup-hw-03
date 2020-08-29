@@ -149,10 +149,6 @@ img {
   margin-right: 50px;
 }
 
-.card {
-  background-color: var(--white);
-}
-
 /* Герой*/
 .hero {
   background-color: var(--footer-bg-color);
@@ -188,10 +184,9 @@ img {
   text-decoration: none;
 }
 /*Преимущества*/
-.advantage {
-  background-color: pink;
-}
+
 .feature {
+  display: flex;
   flex-wrap: wrap;
   margin-bottom: -94px;
 }
@@ -223,9 +218,7 @@ img {
 }
 
 /*чем занимаються*/
-.work {
-  background-color: yellow;
-}
+
 .work-title {
   margin-top: 0;
   margin-bottom: 0;
@@ -286,6 +279,19 @@ img {
   line-height: 1.18;
   text-align: center;
   color: #757575;
+}
+.team-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: -94px;
+}
+.team-items {
+  width: calc((100% - 30px * 4) / 4);
+  margin-right: 30px;
+  margin-bottom: 94px;
+}
+.team-items:nth-child(4) {
+  margin-right: 0;
 }
 
 /*fotter*/
