@@ -222,6 +222,9 @@ img {
 
 /*чем занимаються*/
 
+.section.work {
+  padding-top: 0;
+}
 .work-title {
   margin-top: 0;
   margin-bottom: 0;
@@ -377,11 +380,11 @@ a {
 .portfolio-list {
   margin-bottom: -30px;
 }
+
 .portfolio-items {
   width: calc((100% - 30px * 3) / 3);
   margin-right: 30px;
   margin-bottom: 30px;
-
   border: 1px solid #eeeeee;
 }
 .portfolio-items:nth-child(3) {
