@@ -296,7 +296,6 @@ img {
 /*fotter*/
 
 .footer {
-  height: 252px;
   padding: 60px 0;
   color: var(--white);
   background-color: var(--footer-bg-color);
@@ -348,6 +347,7 @@ a {
 }
 .portfolio .subtitle {
   margin-bottom: 4px;
+
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -356,6 +356,7 @@ a {
 }
 .portfolio .text {
   margin: 0;
+
   font-size: 16px;
   line-height: 1.87;
   color: var(--text-color);
