@@ -157,13 +157,12 @@ img {
 .hero {
   background-color: var(--footer-bg-color);
   text-align: center;
-
   padding-top: 200px;
   padding-bottom: 280px;
 }
 
 .hero-title {
-  margin-top: 0;
+  padding-top: 200px;
   margin-bottom: 40px;
 
   font-weight: 900;
@@ -174,10 +173,7 @@ img {
   color: var(--white);
 }
 .button.secondary {
-  padding-top: 10px;
-  padding-right: 32px;
-  padding-bottom: 10px;
-  padding-left: 32px;
+  padding: 10px 32px;
 
   font-weight: 700;
   font-size: 16px;
