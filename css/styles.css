@@ -53,6 +53,10 @@ img {
 /* button*/
 
 .button.primary {
+  text-align: center;
+  border-radius: 4px;
+  border: none;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
@@ -287,7 +291,7 @@ img {
 .team-items {
   width: calc((100% - 30px * 4) / 4);
   margin-right: 30px;
-
+  background-color: var(--white);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -318,8 +322,14 @@ img {
   font-size: 26px;
   line-height: 1.2;
 }
+.adress {
+  margin: 0;
+  flex-direction: column;
+}
 .adress-link {
   display: block;
+  margin-top: 9px;
+  margin-bottom: 0px;
 
   font-style: normal;
   font-size: 14px;
@@ -332,14 +342,12 @@ img {
   color: var(--acent);
 }
 .company-adress {
-  margin-bottom: 9px;
+  margin: 0;
 
   color: var(--white);
   font-style: normal;
 }
-.mail {
-  margin-bottom: 9px;
-}
+
 /*наши работ ы*/
 a {
   text-decoration: none;
@@ -351,6 +359,7 @@ a {
 .filters-items:not(:last-child) {
   margin-right: 8px;
 }
+
 .portfolio .subtitle {
   margin-bottom: 4px;
 
@@ -361,15 +370,13 @@ a {
   color: var(--primery-text-colour);
 }
 .portfolio .text {
-  margin: 0;
-
   font-size: 16px;
   line-height: 1.87;
   color: var(--text-color);
 }
 
 .portfolio-items {
-  width: calc((100% - 30px * 3) / 3);
+  width: calc((100% - 30px * 2) / 3);
   margin-right: 30px;
   margin-bottom: 30px;
   border: 1px solid #eeeeee;
@@ -381,5 +388,5 @@ a {
   margin-bottom: 0;
 }
 .servise {
-  padding: 20px 0;
+  padding: 20px 24px;
 }
